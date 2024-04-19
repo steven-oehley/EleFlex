@@ -1,0 +1,120 @@
+/* ** VARIABLES ** */
+
+:root {
+  --col-primary: #fff;
+  --col-secondary: #302614;
+  --col-tertiary: #b7832f;
+  --col-text: #707070;
+  --font-size-body: 1.125rem;
+  --font-size-sub-heading: 1.5rem;
+  --font-size-heading: 3rem;
+}
+
+/* ** RESET ** */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: var(--font-size-body);
+}
+
+h2,
+p {
+  margin-top: 0;
+  color: var(--col-text);
+}
+
+.last-child {
+  margin-bottom: 0;
+}
+
+/* ** TYOPGRAPHY ** */
+
+h1 {
+  text-align: center;
+  font-size: var(--font-size-heading);
+}
+
+h2 {
+  font-size: var(--font-size-sub-heading);
+}
+
+/* ** GENERAL ** */
+
+.content-container {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5%;
+  margin-top: 2em;
+}
+
+span {
+  color: var(--col-tertiary);
+}
+
+.dark-col {
+  background-color: var(--col-secondary);
+}
+
+.dark-col p {
+  color: var(--col-primary);
+}
+
+.col {
+  width: 33%;
+  padding: 1em;
+}
+
+.l-col {
+  padding-left: 0;
+}
+
+/* ** SECOND ROW ** */
+
+.second-row {
+  gap: 1%;
+  padding-bottom: 2em;
+}
+
+.bg-col {
+  width: 66%;
+}
+
+@media (max-width: 845px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .second-row {
+    margin-top: 0;
+  }
+
+  .col {
+    width: 100%;
+    margin-top: 1.5em;
+  }
+
+  .l-col {
+    padding-left: 1em;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .last-h2 {
+    margin-top: 40px;
+  }
+}
