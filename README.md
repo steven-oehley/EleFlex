@@ -1,4 +1,4 @@
-# Responsive Design Project - EleFlex
+# Responsive Design Project - EleFlex 🐘
 
 This project showcases responsive design techniques to ensure optimal viewing and interaction across various devices and screen sizes.
 
